@@ -50,7 +50,7 @@ export const WheelSection: React.FC<WheelSectionProps> = ({
             <path
                 d={path}
                 fill={color}
-                stroke={darkMode ? "#374151" : "#E5E7EB"}
+                stroke={darkMode ? "#37415100" : "#E5E7EB00"}
                 strokeWidth="1"
                 className="transition-colors duration-300"
             />
