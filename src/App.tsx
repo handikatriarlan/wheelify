@@ -125,10 +125,10 @@ function App() {
                 <div className="container mx-auto px-2 sm:px-4 py-4 sm:py-6 flex flex-col min-h-screen max-w-7xl">
                     <header className="flex flex-col sm:flex-row justify-between items-center mb-4 sm:mb-6 px-2 sm:px-4">
                         <div className="text-center sm:text-left mb-4 sm:mb-0">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-2">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-2 pb-2">
                                 Wheelify
                             </h1>
-                            <p className="text-xs sm:text-sm opacity-75">
+                            <p className="text-xs sm:text-sm opacity-75 mt-[-6px]">
                                 Created with ♡ by:{" "}
                                 <a
                                     href="https://handikatriarlan.my.id"
