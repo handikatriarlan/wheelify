@@ -35,15 +35,11 @@ function App() {
     const [darkMode, setDarkMode] = useState(false)
     const [soundEnabled, setSoundEnabled] = useState(true)
     const [spinSound] = useState(() => {
-        const audio = new Audio()
-        audio.src =
-            "https://assets.soundbible.com/mp3/Tick-DeepFrozenApps-397275646.mp3"
+        const audio = new Audio("/audio/spin-sound.mp3")
         return audio
     })
     const [winSound] = useState(() => {
-        const audio = new Audio()
-        audio.src =
-            "https://assets.soundbible.com/mp3/Ta Da-SoundBible.com-1884170640.mp3"
+        const audio = new Audio("/audio/spin-winner.mp3")
         return audio
     })
 
