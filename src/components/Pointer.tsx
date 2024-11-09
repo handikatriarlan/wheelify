@@ -4,11 +4,13 @@ import { motion } from "framer-motion"
 interface PointerProps {
     spinning: boolean
     onSpinComplete: () => void
+    center: number
 }
 
 export const Pointer: React.FC<PointerProps> = ({
     spinning,
     onSpinComplete,
+    center,
 }) => {
     return (
         <motion.div
@@ -25,6 +27,8 @@ export const Pointer: React.FC<PointerProps> = ({
                 width: "40px",
                 height: "40px",
                 transformOrigin: "center center",
+                left: `${center - 20}px`,
+                top: `${center - 20}px`,
             }}
         >
             <div className="relative w-full h-full">

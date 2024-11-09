@@ -67,7 +67,11 @@ export const WheelSpinner: React.FC<WheelProps> = ({
                 ))}
             </svg>
 
-            <Pointer spinning={spinning} onSpinComplete={handleSpinComplete} />
+            <Pointer
+                spinning={spinning}
+                center={center}
+                onSpinComplete={handleSpinComplete}
+            />
         </div>
     )
 }
