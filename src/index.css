@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.filter-shadow-light {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.filter-shadow-dark {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.wheel-section:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 640px) {
+    .wheel-section text {
+        font-size: 10px;
+    }
+}
+
+/* Ensure smooth animations */
+* {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
