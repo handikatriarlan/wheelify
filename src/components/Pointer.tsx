@@ -24,8 +24,7 @@ export const Pointer: React.FC<PointerProps> = ({
                 onComplete: onSpinComplete,
             }}
             style={{
-                width: "40px",
-                height: "40px",
+                height: "50px",
                 transformOrigin: "center center",
                 left: `${center - 20}px`,
                 top: `${center - 20}px`,
